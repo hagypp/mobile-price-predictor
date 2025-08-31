@@ -1,10 +1,6 @@
 import streamlit as st
 import pandas as pd
 from joblib import load
-from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.neural_network import MLPClassifier
 
 # Load the trained model
 model = load('best_model.joblib')
