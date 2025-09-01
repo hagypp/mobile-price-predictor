@@ -13,6 +13,10 @@ st.write("""
 This app predicts the price range of a mobile phone based on its features.
 Enter the features below, and the model will predict if the price range is Low, Medium, High, or Very High.
 """)
+model_type = type(model).__name__
+
+# Display the model used for prediction
+st.info(f"The prediction is made using the trained model: **{model_type}**")
 
 # Input fields for features
 st.header("Input Mobile Features")
