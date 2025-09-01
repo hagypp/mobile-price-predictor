@@ -1,5 +1,3 @@
-
-
 # Mobile Price Predictor Project
 
 ## Overview
@@ -98,6 +96,43 @@ mobile-price-classification/
   4. Use sliders and checkboxes to input phone features (e.g., RAM, battery power).
   5. Click "Predict Price Range" to see the predicted price range (Low, Medium, High, Very High).
 
+## Mobile Price Predictor
+
+This project predicts the price range of a mobile phone based on its features using a machine learning model. The app is built with Streamlit and allows users to input mobile features to get predictions.
+
+### Deployed App
+
+Check out the deployed app here: [Mobile Price Predictor](https://mobile-price-predictor-hagypp.streamlit.app/)
+
+### Features
+
+- Predicts price range: Low, Medium, High, or Very High.
+- User-friendly interface with sliders and checkboxes for input.
+- Displays the model used for predictions.
+
+### Deployed App
+
+Check out the deployed app here: [Mobile Price Predictor](https://mobile-price-predictor-hagypp.streamlit.app/)
+
+
+### How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hagypp/mobile-price-predictor.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd mobile-price-predictor
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
 
 ## License
 This project is for educational purposes and uses the [Mobile Price Classification dataset](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) under its respective license.
