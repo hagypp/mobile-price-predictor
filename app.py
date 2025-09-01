@@ -1,12 +1,11 @@
 import streamlit as st
 import pandas as pd
 from joblib import load
+import numpy as np
 
 # Load the trained model
 model = load('best_model.joblib')
-print(type(model))
-import sklearn
-print(sklearn.__version__)
+
 
 # Title and description
 st.title("Mobile Price Range Classification")
@@ -76,6 +75,8 @@ if st.button("Predict Price Range"):
     # Convert to DataFrame
     input_df = pd.DataFrame([input_data])
     prediction = model.predict(input_df)[0]
+    prediction = prediction[0] if isinstance(prediction, np.ndarray) else prediction
+
 
     # Map prediction to label
     price_ranges = {0: 'Low', 1: 'Medium', 2: 'High', 3: 'Very High'}
